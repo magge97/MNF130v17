@@ -1,0 +1,289 @@
+\documentclass[a4paper, norsk, 12pt]{extarticle}
+\usepackage[T1]{fontenc} % Vise norske tegn
+\usepackage[latin1]{inputenc} % For ï¿½ kunne skrive norske tegn
+\usepackage{babel} % Tilpasning til norsk
+\usepackage{graphicx} % For å inkludere grafikk
+\usepackage{amsmath,amssymb} % Ekstra matematikkfunksjoner
+\usepackage{titlesec}
+
+% Juster sidemarginer
+\usepackage[margin=.9in, includefoot]{geometry}
+
+% \usepackage{adjustbox}
+% \usepackage{tabularx}
+% \usepackage{relsize}
+% \usepackage{booktabs}
+
+% Topptekst
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{Obligatorisk oppgave - 2017}
+\fancyhead[C]{MNF130}
+\fancyhead[R]{Magnus Øian}
+\usepackage{pdfpages}
+
+
+% Redefinerer "\section" til "Oppgave n"
+% Nummerering skjer automatisk
+\titleformat{\section}{\center \normalfont \Large \bfseries}
+{Oppgave\ \thesection}{2.3ex plus .2ex}{}
+\titlespacing{\subsection}{2em}{*1}{*5}
+
+
+\begin{document}
+\begin{titlepage}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Universitetet i Bergen}\\[1.5cm] % Name of your university/college
+\textsc{\Large MNF130 - Diskrete strukturer}\\[0.5cm] % Major heading such as course name
+\textsc{\large Våren 2017}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Obligatorisk oppgave}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{center} \large
+Magnus \textsc{Øian} % Your name
+\end{center}
+\end{minipage}\\[4cm]
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+%\includegraphics{Logo}\\[1cm] % Include a department/university logo - this will require the graphicx package
+ 
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	OPPGAVE 1 - H13
+%----------------------------------------------------------------------------------------
+
+\section{}
+\begin{itemize}
+% 1a)
+\item [a)]
+$ p \vee \neg q \vee r \equiv (p \vee \neg q) \vee r \equiv \neg (p \vee \neg q) \rightarrow r \equiv \neg p \wedge q \rightarrow r \neg p \wedge q \rightarrow r \equiv \neg p \wedge q \rightarrow r $
+
+% 1b)
+\item [b)]
+\begin{enumerate}
+\item [1)] Forenkler uttrykket
+\begin{align*}
+(p \rightarrow q) \vee (q \rightarrow r) &\equiv \neg p \vee q \vee \neg q \vee r \equiv \neg p \vee T \vee r \equiv T,
+\end{align*}
+og vi ser at den er sann uansett hvilke verdier for $p$, $q,$ og $r$ vi velger (tautologi).
+\item [2)] Forenkler uttrykket
+\begin{align*}
+(p \rightarrow q) \wedge (q \rightarrow r) &\equiv \neg p \vee q \wedge \neg q \vee r \equiv \neg p \vee F \vee r \equiv \neg p \vee r,
+\end{align*}
+og vi ser at den er sann når $p$ er usann eller $r$ er sann. 
+\end{enumerate}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	OPPGAVE 2 - H13
+%----------------------------------------------------------------------------------------
+
+\section{}
+\begin{itemize}
+
+% 2a)
+\item [a)] Usann \item [b)] Usann \item [c)] Usann \item [d)] Sann \item [e)] Usann \item [f)] FIX
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	OPPGAVE 3 - H13
+%----------------------------------------------------------------------------------------
+
+\section{}
+\begin{itemize}
+
+% 3a) Fix forklaring for h
+\item [a)]
+Vi ser at $g(1) = g(2) = 5$ og følgelig er ikke $g$ injektiv. Hvert element i kodomenet til $h$ avbildes av et unikt element i domenet til $h$, og følgelig er $h$ injektiv. 
+
+% 3b)
+\item [b)]
+La $f : B \rightarrow C$ være en injektiv funksjon. Da kan $f(4)$ ta $3$ verdier, $f(5)$ bare $2$ verdier og $f(6)$ bare $1$ verdi.  Følgelig eksisterer det $3 \cdot 2 \cdot 1 = 6$ slike funksjoner $f$. Mengdene $B$ og $C$ har lik kardinalitet. Alle injektive funksjoner fra $B$ til $C$ vil dermed også være surjektive. 
+
+% 3c)
+\item [c)]
+
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	OPPGAVE 4 - H13
+%----------------------------------------------------------------------------------------
+
+\section{}
+\begin{itemize}
+
+% 4a)
+\item [a)]
+La $P(n)$ være påstanden $a_n = 2^{n-1}$. Vil vise ved induksjon at $P(n)$ er sann for alle heltall $n \geq 1$.
+\begin{description}
+\item[Basissteg]
+Vi ser at $a_1 = 1 = 2^{1-1}$ og $a_2 = 1 + 1 = 2^{2-1}$, så $P(1)$ og $P(2)$ er sann. 
+\item[Induksjonshypotese] Anta at $P(j)$ er sann for all heltall $j$ med $1 \leq j \leq k$ for $k \geq 2$, altså at $a_j = 2^{j-1}$.
+\item[Induksjonssteg] Ønsker å vise at $P(k+1)$ er sann, altså at $a_{k+1} = 2^{(k+1)-1} = 2^k$. Vi ser at
+\begin{align*}
+a_{k+1} = 1 + \sum_{i=1}^k a_i = 1 + \sum_{i=1}^{k-1} a_i + a_k = a_k + a_k = 2a_k = 2 \cdot 2^{k-1} = 2^k.
+\end{align*}
+\end{description}
+
+% 4b)
+\item [b)]
+La $P(n)$ være påstanden $f_n \leq \left(\frac{7}{4} \right)^n$. Vil vise ved induksjon at $P(n)$ er sann for alle heltall $n \geq 0$. 
+\begin{description}
+\item[Basissteg] Vi ser at $a_0 = 0 \leq \left(\frac{7}{4} \right)^0$ og $a_1 = 1 \leq \left(\frac{7}{4} \right)^1 $, så $P(0)$ og $P(1)$ er sann.
+\item[Induksjonsshypotese] Anta at $P(j)$ er sann for alle heltall $j$ med $0 \leq j \leq k$ for $k \geq 1$, altså at $f_j \leq \left(\frac{7}{4} \right)^j$.
+\item[Induksjonssteg] Ønsker å vise at $P(k+1)$ er sann, altså at $f_{k+1} \leq \left(\frac{7}{4} \right)^{k+1}$. Vi ser at 
+\begin{align*}
+f_{k+1} = f_k + f_{k-1} \leq \left(\frac{7}{4} \right)^{k} + \left(\frac{7}{4} \right)^{k-1} = \left(\frac{7}{4} \right)^{k+1} \left(\left(\frac{7}{4} \right)^{-1} + \left(\frac{7}{4} \right)^{-2} \right) < \left(\frac{7}{4} \right)^{k+1}.
+\end{align*}
+\end{description}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	OPPGAVE 5 - H13
+%----------------------------------------------------------------------------------------
+
+\section{}
+
+%----------------------------------------------------------------------------------------
+%	OPPGAVE 1 - H14
+%----------------------------------------------------------------------------------------
+
+\setcounter{section}{1}
+\section{}
+\begin{itemize}
+
+% 1a)
+\item [a)] La $P(n)$ være påstanden $3^n < n!$. Vil vise ved induksjon at $P(n)$ er sann for alle heltall $n \geq 7$.
+\begin{description}
+\item[Basissteg] Vi ser at $3^7 < 7!$, altså at $P(1)$ er sann.
+\item[Induksjonshypotese] Anta at $P(k)$ er sann for $k \geq 7$, altså at $3^k < k!$.
+\item[Induksjonssteg] Ønsker å vise at $P(k+1)$ er sann, altså at $3^{k+1} < {(k+1)}!$. Vi ser at
+\begin{align*}
+3^{k+1} &= 3^k \cdot 3 < k! \cdot 3 < k! \cdot (k+1) = (k+1)!.
+\end{align*}
+\end{description}
+
+% 1b)
+\item [b)] La $P(n)$ være påstanden 
+\begin{align*}
+\sum_{i=0}^{n}(-7)^{i} = \frac{1-(-7)^{n+1}}{8}.
+\end{align*} 
+Vil vise ved induksjon at $P(n)$ er sann for alle heltall $n \geq 0$.
+\begin{description}
+\item[Basissteg] Vi ser at $\frac{1-(-7)^{0+1}}{8} = \frac{8}{8} = 1 = (-7)^0$, altså at $P(0)$ er sann.
+\item[Induksjonshypotese] Anta at $P(k)$ er sann for $k \geq 0$, altså at 
+\begin{align*}
+\sum_{i=0}^{k}(-7)^{i} = \frac{1-(-7)^{k+1}}{8}.
+\end{align*} 
+\item[Induksjonssteg] Ønsker å vise at $P(k+1)$ er sann, altså at 
+\begin{align*}
+\sum_{i=0}^{k+1}(-7)^{i} = \frac{1-(-7)^{k+2}}{8}.
+\end{align*}  
+Vi ser at
+\begin{align*}
+\sum_{i=0}^{k+1}(-7)^{i} &= \sum_{i=0}^{k}(-7)^{i} + (-7)^{k+1} \\
+&= \frac{1-(-7)^{k+1}}{8} + \frac{8\cdot(-7)^{k+1}}{8} \\
+&= \frac{1+7\cdot(-7)^{k+1}}{8} \\
+&= \frac{1-(-7)^{k+2}}{8}
+\end{align*}
+\end{description}
+
+% 1b)
+\item [c)] La $P(n)$ være påstanden $10^n \equiv 1(\mod 3)$. Vil vise ved induksjon at $P(n)$ er sann for alle heltall $n \geq 0$.
+\begin{description}
+\item[Basissteg] Vi ser at $3$ deler $1-1 = 0$, altså at $P(0)$ er sann.
+\item[Induksjonshypotese] Anta at $P(k)$ er sann for $k \geq 0$, altså at $10^k \equiv 1(\mod 3)$.
+\item[Induksjonssteg] Ønsker å vise at $P(k+1)$ er sann, altså at $10^{k+1} \equiv 1(\mod 3)$. Fra induksjonshypotesen har vi at $10^{k} \equiv 1(\mod 3)$ og $10 \equiv 1(\mod 3)$. Da følger det at \begin{align*}
+10^k \cdot 10 \equiv 1\cdot1(\mod 3) \Longleftrightarrow 10^{k+1} \equiv 1(\mod 3).
+\end{align*}
+\end{description}
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	OPPGAVE 3 - H14
+%----------------------------------------------------------------------------------------
+\setcounter{section}{3}
+\section{}
+\begin{itemize}
+
+% 3a)
+\item[a)] 
+Antall byte (8 bit) med nøyaktig tre bit med verdi $1$ er gitt ved
+\begin{align*}
+{{8} \choose {3}} = 56.
+\end{align*}
+
+% 3b)
+\item[b)]
+Antall byte med høyst tre bit med verdi $1$ er gitt ved
+\begin{align*}
+\sum_{i = 0}^{3} {8 \choose i} = 93.
+\end{align*}
+
+% 3c)
+\item[c)]
+Antall byte med minst tre bit med verdi $1$ er gitt ved
+\begin{align*}
+\sum_{i=3}^{8} {8 \choose i} = 219.
+\end{align*}
+
+% 3d)
+\item[d)]
+Antall byte med samme antall 0ere og 1ere er gitt ved
+\begin{align*}
+{8 \choose 4} = 70.
+\end{align*}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	OPPGAVE 4 - H14
+%----------------------------------------------------------------------------------------
+
+\section{}
+\begin{itemize}
+% 4a, b, c, d)
+\item[a)] Sann. Vi kan velge $m = n^2 + 1$. 
+\item[b)] Sann. Vi kan velge $n < 0$ ettersom $m^2 \geq 0$.
+\item[c)] Sann. Hvert heltall $n$ har en additiv invers $m$ slik at $n + m = 0$, og vi kan dermed velge $m = -n$.
+\item[d)] Sann. Vi kan velge $n = \sqrt{2,5}$ og $m = \sqrt{2,5}$.
+\item[e)] Usann. Ingen løsning av likningssystemet $n + 1 = 4$ og $n-1=1$.
+\end{itemize}
+
+\end{document}

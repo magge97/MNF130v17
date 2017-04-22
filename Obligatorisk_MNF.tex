@@ -359,12 +359,24 @@ $j=5$ & 3 & 5 & 7 & 8 & 9 \\ \hline
 
 % 7a)
 \item [a)]
+La $a, b \in B$ slik at $(f \circ g)(a) = (f\circ g)(b)$. Fra definisjonen av sammensatte funksjoner har vi at $g(f(a)) = g(f(b))$. $g$ er en-entydig, altså må $f(a) = f(b)$. Siden $f$ er en-entydig må $a = b$, som viser at $(f \circ g)$ er en-entydig.
 
 % 7b)
 \item [b)]
+Gitt en vilkårlig $c \in C$ har vi fra surjektivitet til $f$ at det eksisterer en $b \in B$ slik at $f(b) = c$. Likeledes kan vi konkludere at det eksisterer en $a \in A$ for en vilkårlig $b \in B$ slik at $g(a) = b$. Da følger det at det for en vilkårlig $c \in C$ eksisterer en $a \in A$ slik at $(f \circ g)(a) = c$, altså at $f \circ g$ er surjektiv. 
 
 % 7c)
 \item [c)]
+Vi har 
+\begin{align*}
+(f \circ g)(x) &= f(g(x)) = f(2x + 3) = (2x + 3)^3 \\
+(g \circ f)(x) &= g(f(x)) = g(x^3) = 2(x^3) + 3 
+\end{align*}
+For $x = 0$ har vi at 
+\begin{align*}
+(f \circ g)(0) = (2 \cdot 0 + 3)^3 = 3^3 \neq (g \circ f)(0) = 3,
+\end{align*}
+funksjonene er altså ikke like.
 
 \end{itemize}
 

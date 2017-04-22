@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.28)  20 APR 2017 13:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.28)  22 APR 2017 15:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -409,7 +409,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 261.
+(amsmath)                 on input line 275.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -418,6 +418,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [3]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -435,11 +438,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Here is how much of TeX's memory you used:
  5292 strings out of 493014
  72535 string characters out of 6133351
- 160252 words of memory out of 5000000
+ 159252 words of memory out of 5000000
  8719 multiletter control sequences out of 15000+600000
  17070 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,43p,350b,364s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,43p,425b,364s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvi
 ps/cm-super/cm-super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
@@ -449,19 +452,20 @@ amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sf
-bx1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx
-1728.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx24
-88.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfcc1440
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfcc1728.p
-fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb
-></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on Obligatorisk_MNF.pdf (6 pages, 199760 bytes).
+cm/cmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-supe
+r/sfbx1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/
+sfbx1728.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sf
+bx2488.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfcc
+1440.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfcc17
+28.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfcc2074
+.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.p
+fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on Obligatorisk_MNF.pdf (6 pages, 205755 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 96 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

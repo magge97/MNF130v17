@@ -189,6 +189,20 @@ f_{k+1} = f_k + f_{k-1} \leq \left(\frac{7}{4} \right)^{k} + \left(\frac{7}{4} \
 %----------------------------------------------------------------------------------------
 
 \section{}
+\begin{itemize}
+
+% 5a)
+\item [a)] Gitt ekvivalensrelasjonen $R \subseteq A \times A$ på mengden $A$. Ekvivalensklassen $[a]_R$ med $a \in A$ er mengden av alle elementer som er relatert til $a$ i relasjonen $R$.
+
+% 5b)
+\item [b)]
+Vi ser at $(3, 4), (1,12), (4, 6) \in [(3,4)]_R$. Ekvivalensrelasjoner er symmetriske, så da har ekvivalensklassen $[(3,4)]_R$ 6 medlemmer.
+
+% 5c)
+\item [c)]
+Ekvivalensklassene til $R$ er mengder bestående av ordnede par $(a, b)$ med $a, b \in \mathbb{Z}_{+}$ som har samme minste felles multiplum. Det er uendelig mange positive heltall. Dermed finnes det uendelig mange mulige minste felles multiplum av positive heltall og følgelig uendelig mange ekvivalensklasser i $M$. Mengden $\mathbb{Z}_{+}$ er tellbar og dermed også $M$. Påstand (iv) stemmer. 
+
+\end{itemize}
 
 %----------------------------------------------------------------------------------------
 %	OPPGAVE 1 - H14
@@ -318,9 +332,22 @@ Den går igjennom hvert tall i en liste av tall.
 Dersom tallet er mindre enn noen av de foregående tallene tas det ut. Hele listen forskyves mot høyre og tallet settes inn i den tidligere posisjonen til det første tallet som var mindre.
 % 6b)
 \item [b)] ~
-\begin{table}[h]\centering\begin{tabular}{| c || c | c | c | c | c |}\hline-- & 7 & 5 & 8 & 3 & 9 \\ \hline
-\multicolumn{0}{}{} \\[-2.3ex] \hline $j=2$ & 7 & 5 & 8 & 3 & 9 \\ \hline $j=3$ & 5 & 7 & 8 & 3 & 9 \\ \hline$j=4 $& 5 & 7 & 8 & 3 & 9\\ \hline $j=5$ & 3 & 5 & 7 & 8 & 9 \\ \hline 
-\multicolumn{0}{}{}  \\[-2.3ex] \hline \bf{return} & 3 & 5 & 7 & 8 & 9 \\\hline\end{tabular}\label{table:nonlin}\end{table}
+\begin{table}[h]
+\centering
+\begin{tabular}{| c || c | c | c | c | c |}
+\hline
+-- & 7 & 5 & 8 & 3 & 9 \\ \hline
+\multicolumn{0}{}{} \\[-2.3ex] \hline 
+$j=2$ & 5 & 7 & 8 & 3 & 9 \\ \hline 
+$j=3$ & 5 & 7 & 8 & 3 & 9 \\ \hline
+$j=4 $& 3 & 5 & 7 & 8 & 9 \\ \hline 
+$j=5$ & 3 & 5 & 7 & 8 & 9 \\ \hline 
+\multicolumn{0}{}{}  \\[-2.3ex] \hline 
+\bf{return} & 3 & 5 & 7 & 8 & 9 \\
+\hline
+\end{tabular}
+\label{table:nonlin}
+\end{table}
 \end{itemize}
 
 %----------------------------------------------------------------------------------------
